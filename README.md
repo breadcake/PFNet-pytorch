@@ -2,14 +2,15 @@
 PyTorch implementation for reproducing Perspective Network (PFNet) results in the paper [Rethinking Planar Homography Estimation Using Perspective Fields](https://eprints.qut.edu.au/126933/) by Rui Zeng, Simon Denman, Sridha Sridharan, Clinton Fookes.
 ***
 ### COCO Dataset
-- Please refer to [Common Objects in Context](http://cocodataset.org/#home) to download the dataset used in the paper.
+- Download the COCO 2014 dataset used in the paper.
 ***
 ### Trained Weights.
-- Download our trained weights from [provisionally trained weights](https://www.dropbox.com/s/dk29bo0ml6ao7gc/pfnet_0200.h5?dl=0) and put it in the root directory
+- Download our trained weights from [Baidu Cloud](https://pan.baidu.com/s/1nVo55NGG-iCXy__e08SokQ)(Extraction code: enkv) and put it in the root directory
 
 ***
 ### Dependencies
-python 3.6
+- Python 3.6
+- Pytorch 1.8.0
 
 ***
 ### Training
@@ -20,3 +21,19 @@ python 3.6
 ### Evaluation
 - Evaluate the model checkpoint
   - `python evaluate.py --dataset=/path/to/COCO --model=./pfnet_0200.pth`
+
+#### Current Performance
+```
+MACE: 1.21
+```
+
+results | 
+---   | 
+![在这里插入图片描述](results/0000.jpg) | 
+![在这里插入图片描述](results/0100.jpg) | 
+![在这里插入图片描述](results/0200.jpg) | 
+![在这里插入图片描述](results/0300.jpg) | 
+![在这里插入图片描述](results/0400.jpg) | 
+
+##  Reference
+[https://github.com/ruizengalways/PFNet](https://github.com/ruizengalways/PFNet)
